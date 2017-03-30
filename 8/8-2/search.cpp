@@ -11,18 +11,19 @@ In search(In beg, In end, In sbeg, In send)
     while (beg != end) {
         if (*beg == *sbeg) {
             In tmp = beg;
-
+            In stmp = sbeg;
             tmp++;  
-            sbeg++;
-            while (sbeg != send) {
-                if (*sbeg == *tmp) {
+            stmp++;//do not use sbeg for ++ since you may use it next time if this time not fully matching
+            //sbeg++;
+            while (/*sbeg*/stmp != send) {
+                if (/**sbeg*/*stmp == *tmp) {
                     tmp++;  
-                    sbeg++;
+                    stmp++;//sbeg++;
                 }
                 else 
                     break;
             }
-            if (sbeg == send)
+            if (/*sbeg*/stmp == send)
                 return beg;
         
         }
