@@ -1,0 +1,14 @@
+<noun> cat and dog
+<noun> dog
+<noun> chair and desk
+<noun-phrase> <noun>
+<noun-phrase> <adjective> <noun-phrase>
+<adjective> large
+<adjective> brown
+<adjective> absurd
+<verb> jumps
+<verb> sits
+<location> on the stairs
+<location> wherever it wants
+<sentence> the <noun-phrase> <verb> <location>
+#<sentence> here <verb> <noun-phrase> <verb> <location> <verb> <location>
